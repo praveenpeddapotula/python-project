@@ -13,7 +13,7 @@ pipeline {
         }
         stage ('unitest') {
             steps {
-                sh 'python3 -m unittest discover'
+                sh 'python3 -m xmlrunner discover -o test-reports'
             }
         }
     }
