@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('checkout') {
             steps {
-                git url:'' , branch:'main'
+                git url:'https://github.com/praveenpeddapotula/python-project.git' , branch:'main'
             }
         }
         stage ('install dependencies') {
